@@ -27,7 +27,11 @@ make
 sudo make install
 sudo chown -R "$SUDO_USER" /opt/programs
 
-# After that you will need to configure the ps3 controller in retroarch. 
+# And now to copy in the existing config file...
+mkdir -p ~/.config/retroarch/autoconfig/
+cp ./configs/Sony PLAYSTATION(R)3 Controller.cfg ~/.config/retroarch/autoconfig
+
+# If this fails, you will need to configure the ps3 controller in retroarch. 
 # After configuring the user 1 inputs, there's a menu option called something 
 # like 'save autoconfig' which will save all the inputs to a config file for further use.
 
